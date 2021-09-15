@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+:root {
+    --background-gradient: linear-gradient(45deg, #43389F, #4ec6ca);
+    --text-font: 'Open Sans', Helvetica, sans-serif;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 5px;
+    box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: var(--background-gradient);
+    color: #333;
+    font-family: var(--text-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: solid black 1px;
+    width: 190px;
+    height: 190px;
+}
+
+.onehundred {
+    position: relative;
+    height: 100px;
+    width: 200px;
+}
+
+.oneslant {
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 25px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    left: -19.3px;
+    top: 0.5px;
+    z-index: 4;
+
+}
+
+.onestraight {
+    position: absolute;
+    height: 100px;
+    width: 25px;
+    background-color: white;
+    border-radius: 2px;
+    box-sizing: border-box;
+    left: 0px;
+    z-index: 5;
+    box-shadow: 0 0 40px -5px;
+}
+
+.zero1, .zero2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: solid white 25px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px -2px;
+    /*display: inline-block; not needed as a position of absolute takes it out of the normal flow of the page*/
+    left: 16px;
+    z-index: 3;
+}
+
+.zero2 {
+    left: 96px;
+    z-index: 2;
+}
+
+.csschallenge,
+.days {
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    font-size: 80px;
+    left: 0px;
+    top: -10px;
+}
+
+.csschallenge {
+    font-size: 24px;
+    top: -30px;
+}
